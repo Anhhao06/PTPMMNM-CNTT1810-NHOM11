@@ -4,6 +4,17 @@ Nhánh này chỉ chứa một bài lab. Dùng Ubuntu/WSL, PHP từ 8.1 và Git.
 
 Không cần PostgreSQL hoặc Composer.
 
+## Chuẩn bị trên Ubuntu/WSL
+
+```bash
+sudo apt update
+sudo apt install php-cli git unzip
+php -v
+git --version
+```
+
+PHP cần từ 8.1 trở lên. Các lệnh bên dưới chạy trong Ubuntu/WSL. Khi tải nhiều bài, trở về thư mục cha chứa các thư mục lab trước mỗi lệnh clone; không clone bài tiếp theo bên trong `Ma_nguon` của bài trước.
+
 ## Tải bài
 
 ```bash
@@ -38,3 +49,5 @@ Không đưa .local, mật khẩu hoặc dữ liệu cá nhân thật vào bài 
 ## Các bài khác
 
 [Lab01](https://github.com/FIT-DNU/Open-Source-Software-Development/tree/lab1) · [Lab02](https://github.com/FIT-DNU/Open-Source-Software-Development/tree/lab2) · [Lab03](https://github.com/FIT-DNU/Open-Source-Software-Development/tree/lab3) · [Lab04](https://github.com/FIT-DNU/Open-Source-Software-Development/tree/lab4) · [Lab05](https://github.com/FIT-DNU/Open-Source-Software-Development/tree/lab5)
+
+Kết quả yêu cầu của phần mẫu: `CHECK_ENV=PASS`. `check` chỉ kiểm tra môi trường. `extend` ở bản khởi đầu còn ca chưa đạt vì TODO; không sửa test để bỏ qua lỗi.
