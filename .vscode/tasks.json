@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Chạy PHP Built-in Server (localhost:8000)",
+            "type": "shell",
+            "command": "C:\\xampp\\php\\php.exe",
+            "args": [
+                "-S",
+                "localhost:8000",
+                "-t",
+                "${workspaceFolder}"
+            ],
+            "isBackground": true,
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Chạy Kiểm Thử Tự Động 5 Phép Thử (test_btl.php)",
+            "type": "shell",
+            "command": "C:\\xampp\\php\\php.exe",
+            "args": [
+                "${workspaceFolder}\\test_btl.php"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        }
+    ]
+}

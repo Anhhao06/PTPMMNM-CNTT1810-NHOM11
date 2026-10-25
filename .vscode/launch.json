@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Chạy file PHP hiện tại (CLI)",
+            "type": "php",
+            "request": "launch",
+            "program": "${file}",
+            "runtimeExecutable": "C:\\xampp\\php\\php.exe"
+        },
+        {
+            "name": "Chạy Server PHP Built-in",
+            "type": "php",
+            "request": "launch",
+            "program": "${workspaceFolder}\\BTL.php",
+            "serverReadyAction": {
+                "pattern": "Development Server \\(http://localhost:([0-9]+)\\) started",
+                "uriFormat": "http://localhost:%s/BTL.php",
+                "action": "openExternally"
+            }
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
+    "php.suggest.basic": true,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "files.defaultLanguage": "php"
+}
